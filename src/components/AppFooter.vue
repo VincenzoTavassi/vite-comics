@@ -76,7 +76,7 @@ export default {};
 
 footer {
   background-color: black;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
 .footer-bg-image {
