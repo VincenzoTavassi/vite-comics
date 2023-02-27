@@ -4,7 +4,7 @@ export default {
     return {
       headerlinks: [
         { text: "characters", active: false, link: "#" },
-        { text: "comics", active: false, link: "#" },
+        { text: "comics", active: true, link: "#" },
         { text: "movies", active: false, link: "#" },
         { text: "tv", active: false, link: "#" },
         { text: "collectibles", active: false, link: "#" },
@@ -24,7 +24,11 @@ export default {
       <div class="container">
         <img src="../assets/img/dc-logo.png" alt="Logo" />
         <ul>
-          <li v-for="(link, index) in headerlinks" :key="index">
+          <li
+            v-for="(link, index) in headerlinks"
+            :key="index"
+            :class="link.active ? 'active' : ''"
+          >
             <a :href="link.link">{{ link.text }}</a>
           </li>
         </ul>
@@ -45,11 +49,13 @@ header {
     width: 100%;
     height: 75%;
     @include flex-center;
+    align-items: flex-end;
     .container {
-      @include flex-center;
       width: 1200px;
       margin: 0 auto;
+      display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       ul {
         list-style: none;
         li {
@@ -60,9 +66,13 @@ header {
           &:hover {
             border-bottom: 5px solid #0c7cec;
           }
+          &.active {
+            border-bottom: 5px solid #0c7cec;
+            color: #0c7cec;
+          }
           a {
             text-decoration: none;
-            color: #333;
+            color: inherit;
             font-weight: bold;
             font-size: 0.8rem;
             line-height: 80px;
@@ -75,7 +85,8 @@ header {
       }
     }
     img {
-      max-height: 70px;
+      max-height: 100px;
+      padding-bottom: 15px;
     }
   }
 }
