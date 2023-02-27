@@ -1,7 +1,17 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppContent from "./components/AppContent.vue";
+import AppLinks from "./components/AppLinks.vue";
+import AppFooter from "./components/AppFooter.vue";
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <main>
+    <AppContent />
+    <AppLinks />
+  </main>
+  <AppFooter />
+</template>
 
 <style scoped></style>
