@@ -34,25 +34,24 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../assets/scss/mixins.scss" as *;
 header {
-  height: 200px;
+  height: 150px;
   background-color: black;
   display: flex;
   nav {
     background-color: white;
-    height: 70%;
     margin-top: auto;
     width: 100%;
+    height: 75%;
+    @include flex-center;
     .container {
-      max-width: 1200px;
+      @include flex-center;
+      width: 1200px;
       margin: 0 auto;
-      display: flex;
       justify-content: space-between;
-      align-items: center;
       ul {
         list-style: none;
-        display: flex;
-        align-items: center;
         li {
           display: inline-block;
           margin-right: 1.5rem;
@@ -66,7 +65,7 @@ header {
             color: #333;
             font-weight: bold;
             font-size: 0.8rem;
-            line-height: 100px;
+            line-height: 80px;
             display: inline-block;
             &:hover {
               color: #0c7cec;

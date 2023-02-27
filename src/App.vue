@@ -14,4 +14,10 @@ import AppFooter from "./components/AppFooter.vue";
   <AppFooter />
 </template>
 
-<style scoped></style>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+</style>

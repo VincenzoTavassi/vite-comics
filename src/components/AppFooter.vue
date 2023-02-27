@@ -2,6 +2,10 @@
 export default {};
 </script>
 
-<template></template>
+<template>
+  <footer></footer>
+</template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use "../assets/scss/mixins.scss" as *;
+</style>
