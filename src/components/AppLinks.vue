@@ -33,7 +33,7 @@ export default {};
 @use "../assets/scss/mixins.scss" as *;
 
 section {
-  background-color: #0c7cec;
+  background-color: $brand-blue;
   padding: 50px;
   color: white;
 }

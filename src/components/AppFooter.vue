@@ -104,7 +104,7 @@ footer {
   padding: 30px 0;
   .btn {
     padding: 15px;
-    border: 2px solid #0c7cec;
+    border: 2px solid $brand-blue;
     background-color: transparent;
     color: white;
     text-transform: uppercase;
@@ -113,13 +113,13 @@ footer {
     cursor: pointer;
     &:hover {
       background-color: white;
-      color: #0c7cec;
+      color: $brand-blue;
     }
   }
   .follow-icons {
     @include flex-center;
     h2 {
-      color: #0c7cec;
+      color: $brand-blue;
       display: inline-block;
       margin-right: 1rem;
     }
@@ -149,7 +149,7 @@ h2 {
         color: gray;
         font-size: 0.8rem;
         &:hover {
-          color: #0c7cec;
+          color: $brand-blue;
         }
       }
     }

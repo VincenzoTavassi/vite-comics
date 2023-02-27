@@ -64,10 +64,10 @@ header {
           text-transform: uppercase;
           border-bottom: 5px solid transparent;
           &:hover {
-            border-bottom: 5px solid #0c7cec;
+            border-bottom: 5px solid $brand-blue;
           }
           &.active {
-            border-bottom: 5px solid #0c7cec;
+            border-bottom: 5px solid $brand-blue;
             color: #0c7cec;
           }
           a {
@@ -78,7 +78,7 @@ header {
             line-height: 80px;
             display: inline-block;
             &:hover {
-              color: #0c7cec;
+              color: $brand-blue;
             }
           }
         }
